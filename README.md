@@ -5,10 +5,12 @@ Our research project aims to conduct a comprehensive analysis of global health d
 
 Based on comprehensive analysis of general health data, which areas of the world are in greatest need of assistance or aid from the World Health Organization (WHO) and other organizations, and which countries demonstrate exemplary health outcomes and practices that can serve as valuable lessons for global health improvement efforts?
 
+The slide deck with the analysis process and conclusion can be found at 
+https://docs.google.com/presentation/d/1ocTOHkDrqGDJFO85Cjwz38St5kXDhVix88cvsFs2HfM/edit#slide=id.g252acccf8a5_0_18
+
 ## Instructions
 
 ### Data sets
-
 Data sets were obtained from the following websites:
 Kaggle
 World Health Organization (WHO)
@@ -35,7 +37,7 @@ Turkey.
 - For the number of Medical Doctors, 60.98% of the countries were filtered out from the original data set because of the missing values, bringing dataset to the size of 150 countries.
 - We took the average of the HepB3, DPT, and Measles Vaccine to analyze the overall immunization rates.
 
-### Questions analyzed 
+### Analysis
 
 1. GDP and Medical Doctors.
 - What is the purpose/driving factors to perform the analysis.
