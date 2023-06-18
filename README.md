@@ -41,11 +41,15 @@ Turkey.
 ### Questions analyzed 
 
 1. GDP and Medical Doctors.
-- The purpose of this analysis is to find out the correlation between GDP per Capita and medical resources per capita, and correlation between GDP per capita and life expectancy. Then find the difference between top 20 and bottom 20 nations. This analysis will help to understand the why countries with higher GDP has higher life expectancy
-- The code for this analysis is in "GDP_vs_life_expectancy.ipynb"
-- The dataframes used in this anaysis is "totalavgfilter.csv" and "world-populatoin-by-countries-dataset.csv". The "totalavgfilter.csv" cotains a clean data of 150 nations with columns needed for this analysis such as GDP Per Capita, Life Expectancy etc. However, it is hard to quantify the result of medical doctors per capita. Then the "world-populatoin-by-countries-dataset.csv" was read and merged to append the population for each nation. Then the average number of population between 2015-2019 was appened for this specific analysis. By using the column stores the number of medical doctors in each nation divide by the average population of each nation, it gives the medical doctor per capita. 1 divided by this number gives the number of patients per doctor.
-- Since GDP per capital and life expectancy are two indepent dataset, the Pearson correlation test was performed for understanding the correlativeness between two datas. After normalized the data set, a log transformation was performed for a more favoured result.
--By comparing the GDP per capita and life expectancy column, after perfroming a correlation hypothesis test (linear regression), it returns a correlation coeffient of 0.83, this indicates that a optimum positive relation between GDP and life expectancy, meaning the higher GDP per capita, the reletive life expectancy will be higher.
+The purpose of this analysis is to find out the correlation between GDP per Capita and medical resources per capita, and correlation between GDP per capita and life expectancy. Then find the difference between top 20 and bottom 20 nations. This analysis will help to understand the why countries with higher GDP has higher life expectancy
+ 
+The code for this analysis is in "GDP_vs_life_expectancy.ipynb"
+ 
+The dataframes used in this anaysis is "totalavgfilter.csv" and "world-populatoin-by-countries-dataset.csv". The "totalavgfilter.csv" cotains a clean data of 150 nations with columns needed for this analysis such as GDP Per Capita, Life Expectancy etc. However, it is hard to quantify the result of medical doctors per capita. Then the "world-populatoin-by-countries-dataset.csv" was read and merged to append the population for each nation. Then the average number of population between 2015-2019 was appened for this specific analysis. By using the column stores the number of medical doctors in each nation divide by the average population of each nation, it gives the medical doctor per capita. 1 divided by this number gives the number of patients per doctor.
+
+Since GDP per capital and life expectancy are two indepent dataset, the Pearson correlation test was performed for understanding the correlativeness between two datas. After normalized the data set, a log transformation was performed for a more favoured result.
+
+By comparing the GDP per capita and life expectancy column, after perfroming a correlation hypothesis test (linear regression), it returns a correlation coeffient of 0.83, this indicates that a optimum positive relation between GDP and life expectancy, meaning the higher GDP per capita, the reletive life expectancy will be higher.
 The correlation test between the GDP per capita and medical doctors per captial returns a correlation coeffecient of 0.72, it also desmonstrate strong amount of relaton between the two features.
 
 
@@ -98,6 +102,8 @@ You can find the analysis in the Jupyter Notebook file: mortality_API_immunizati
 We utilized a dataset that included the latitude and longitude coordinates of each country (world_df), which was found on Google Developer's Website. 
 
 We utilized json, pandas, and hvplot.pandas, API for this analysis. 
+
+As we utilized GeoAplify API, you would need to save your "geoapify_key" into the config.py file in order to run the code sufficiently. 
 
 Utilizing the GeoAplify API, we iterated through all the countries to determine how many hospitals were present within a 500 km radius of the Capital City with a limit of 150 counts, creating a new column and data frame called hospital_df which included the hospital count for each country. Some limitations were that 3 countries (Sweden, Nigeria, and Chad) did not have any information on the hospital count. 
 
