@@ -1,2 +1,2 @@
 # Geoapify API Key
-geoapify_key = "ADD YOU API KEY HERE"
+geoapify_key = "ADD YOUR API KEY HERE"
