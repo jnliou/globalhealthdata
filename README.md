@@ -5,12 +5,14 @@ Our research project aims to conduct a comprehensive analysis of global health d
 
 Based on comprehensive analysis of general health data, which areas of the world are in greatest need of assistance or aid from the World Health Organization (WHO) and other organizations, and which countries demonstrate exemplary health outcomes and practices that can serve as valuable lessons for global health improvement efforts?
 
-Our presentation can be found on Google Slides at: https://docs.google.com/presentation/d/1ocTOHkDrqGDJFO85Cjwz38St5kXDhVix88cvsFs2HfM/edit#slide=id.g25f6af9dd6_0_0 
+
+The slide deck with the analysis process and conclusion can be found at 
+https://docs.google.com/presentation/d/1ocTOHkDrqGDJFO85Cjwz38St5kXDhVix88cvsFs2HfM/edit#slide=id.g252acccf8a5_0_18
+
 
 ## Instructions
 
 ### Data sets
-
 Data sets were obtained from the following websites:
 Kaggle
 World Health Organization (WHO)
@@ -38,7 +40,7 @@ Turkey.
 - For the number of Medical Doctors, 60.98% of the countries were filtered out from the original data set because of the missing values, bringing dataset to the size of 150 countries.
 - We took the average of the HepB3, DPT, and Measles Vaccine to analyze the overall immunization rates.
 
-### Questions analyzed 
+### Analysis
 
 1. GDP and Medical Doctors.
 The purpose of this analysis is to find out the correlation between GDP per Capita and medical resources per capita, and correlation between GDP per capita and life expectancy. Then find the difference between top 20 and bottom 20 nations. This analysis will help to understand the why countries with higher GDP has higher life expectancy
@@ -54,7 +56,24 @@ The correlation test between the GDP per capita and medical doctors per captial 
 
 
 2. Life Expectancy vs. Urban/Rural Population ratio.
+The purpose of the analysis to see if countries if diferent Urban/Rural population have different LIfe Expectancy.
 
+The analysis can be found in Jupyter Notebook file: life_expect_vs_urban_pop.ipynb.
+
+The analysis was performed based on the Data Frame country_doctors_total_avg that contains information for the whole population for all the countries (246) that is averaged out by years.
+The map is build based on the data from the Data Frame country_doctors_total_avg_filtered and the coordinates were pulled from world_latitude_longitude.csv.
+
+To perform the anaylsis linear regression analysis, correlation analysis, independent sample t-test were used to check statistical significance:
+- LinregressResult(slope=0.20960452658895146, intercept=60.13577971371717, rvalue=0.6177675233644961, pvalue=2.7918422048609635e-27, stderr=0.017080576290189883, intercept_stderr=1.0555839781164265).
+- PearsonRResult(statistic=0.6177675233644959, pvalue=2.79184220486113e-27).
+- Ttest_indResult(statistic=-10.782843029791302, pvalue=8.933679816645654e-22)
+
+To visualize the results the following types of graphs were created:
+ - scatter plot to show relationship between Life Expectancy and Urban Population Ratio.
+ - regression line.
+ - box plots.
+ - map visualization.
+ 
 3. Immunization Rates
 The purpose of this analysis was to analyze the average immunization rates of 150 countries, and determine if there were any correlations between average immunization rates and medical doctor prevalence, and average immunization rates and life expectancy. 
 
