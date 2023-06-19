@@ -14,11 +14,11 @@ https://docs.google.com/presentation/d/1ocTOHkDrqGDJFO85Cjwz38St5kXDhVix88cvsFs2
 
 ### Data sets
 Data sets were obtained from the following websites:
-Kaggle
-World Health Organization (WHO)
-World Development Indicator (WDI)
-Google Developers 
-THe data sets included the following information:
+Kaggle,
+World Health Organization (WHO),
+World Development Indicator (WDI),
+& Google Developers 
+The data sets included the following information:
 - Mortality Rates, Average Immunization Rates, GDP, Life Expectancy, Urban vs. Rural Population %, Medical Doctor Numbers, Latitude/Longitude 
 
 ### Data cleaning
