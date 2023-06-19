@@ -52,7 +52,24 @@ The correlation test between the GDP per capita and medical doctors per captial 
 
 
 2. Life Expectancy vs. Urban/Rural Population ratio.
+The purpose of the analysis to see if countries if diferent Urban/Rural population have different LIfe Expectancy.
 
+The analysis can be found in Jupyter Notebook file: life_expect_vs_urban_pop.ipynb.
+
+The analysis was performed based on the Data Frame country_doctors_total_avg that contains information for the whole population for all the countries (246) that is averaged out by years.
+The map is build based on the data from the Data Frame country_doctors_total_avg_filtered and the coordinates were pulled from world_latitude_longitude.csv.
+
+To perform the anaylsis linear regression analysis, correlation analysis, independent sample t-test were used to check statistical significance:
+- LinregressResult(slope=0.20960452658895146, intercept=60.13577971371717, rvalue=0.6177675233644961, pvalue=2.7918422048609635e-27, stderr=0.017080576290189883, intercept_stderr=1.0555839781164265).
+- PearsonRResult(statistic=0.6177675233644959, pvalue=2.79184220486113e-27).
+- Ttest_indResult(statistic=-10.782843029791302, pvalue=8.933679816645654e-22)
+
+To visualize the results the following types of graphs were created:
+ - scatter plot to show relationship between Life Expectancy and Urban Population Ratio.
+ - regression line.
+ - box plots.
+ - map visualization.
+ 
 3. Immunization Rates
 The purpose of this analysis was to analyze the average immunization rates of 150 countries, and determine if there were any correlations between average immunization rates and medical doctor prevalence, and average immunization rates and life expectancy. 
 
