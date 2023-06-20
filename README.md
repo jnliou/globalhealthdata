@@ -6,7 +6,8 @@ Our research project aims to conduct a comprehensive analysis of global health d
 Based on comprehensive analysis of general health data, which areas of the world are in greatest need of assistance or aid from the World Health Organization (WHO) and other organizations, and which countries demonstrate exemplary health outcomes and practices that can serve as valuable lessons for global health improvement efforts?
 
 
-The slide deck with the analysis process and conclusion can be found at 
+The slide deck of our presentation can be found as a PDF, titled:  Presentation - Analysis of Overall Healthcare Worldwide.PDF
+or on Google Slides: 
 https://docs.google.com/presentation/d/1ocTOHkDrqGDJFO85Cjwz38St5kXDhVix88cvsFs2HfM/edit#slide=id.g252acccf8a5_0_18
 
 
@@ -129,6 +130,15 @@ Utilizing the GeoAplify API, we iterated through all the countries to determine 
 We merged this dataframe that included the latitude, longitude, and hosptial count with our outline_df, which was created earlier in this jupyter notebook. We filtered the data to include Life expectancy total population,	Average Immunization,	Medical doctors (number), and Country Name for the purpose of plotting it on a map.
 
 We then plotted all the data onto a map using hvplot.pandas. 
+
+# References
+The references were taken from the following sources: 
+https://data.worldbank.org/indicator/SP.DYN.AMRT.FE 
+https://data.worldbank.org/indicator/SP.DYN.AMRT.MA 
+https://www.kaggle.com/datasets/paultimothymooney/latitude-and-longitude-for-every-country-and-state 
+https://data.worldbank.org/indicator/SP.POP.TOTL.FE.ZS
+https://www.kaggle.com/datasets/kiranshahi/life-expectancy-dataset?datasetId=1980580&sortBy=dateRun&tab=profile 
+https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset
 
 
 
