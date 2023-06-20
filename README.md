@@ -132,7 +132,7 @@ We merged this dataframe that included the latitude, longitude, and hosptial cou
 We then plotted all the data onto a map using hvplot.pandas. 
 
 # References
-The references were taken from the following sources: 
+The datasets were taken from the following sources: 
 https://data.worldbank.org/indicator/SP.DYN.AMRT.FE 
 https://data.worldbank.org/indicator/SP.DYN.AMRT.MA 
 https://www.kaggle.com/datasets/paultimothymooney/latitude-and-longitude-for-every-country-and-state 
