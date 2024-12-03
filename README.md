@@ -101,6 +101,5 @@ The datasets were taken from the following sources:
 - [Kaggle](https://www.kaggle.com/datasets/paultimothymooney/latitude-and-longitude-for-every-country-and-state)
 - [World Population Dataset](https://www.kaggle.com/datasets/kiranshahi/life-expectancy-dataset?datasetId=1980580&sortBy=dateRun&tab=profile)
 
----
 
-This revised README provides a more organized and structured overview of
+
